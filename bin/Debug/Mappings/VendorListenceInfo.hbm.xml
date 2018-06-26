@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+    <class name="Fuli.Entity.Domain.VendorListenceInfo, Fuli.Entity" table="VendorListenceInfo">
+
+        <id name="Id" column="Id" type="Int64" unsaved-value="0">
+            <generator class="native"/>
+        </id>
+        <property name="VendorId" type="Int64" column="VendorId" />
+        <property name="IdentityName" type="String" column="IdentityName" />
+        <property name="IdentityCard" type="String" column="IdentityCard" />
+        <property name="IdentityEndTime" type="String" column="IdentityEndTime" />
+        <property name="IdentityCorrectSidePath" type="String" column="IdentityCorrectSidePath" />
+        <property name="IdentityOppositeSidePath" type="String" column="IdentityOppositeSidePath" />
+        <property name="BLName" type="String" column="BLName" />
+        <property name="BLNum" type="String" column="BLNum" />
+        <property name="BLEndTime" type="String" column="BLEndTime" />
+        <property name="BLPicPath" type="String" column="BLPicPath" />
+        <property name="VendorCorrectSidePath" type="String" column="VendorCorrectSidePath" />
+        <property name="FDLName" type="String" column="FDLName" />
+		<property name="FDLNum" type="String" column="FDLNum" />
+		<property name="FDLEndTime" type="String" column="FDLEndTime" />
+		<property name="FDLPicPath" type="String" column="FDLPicPath" />
+		<property name="FPLName" type="String" column="FPLName" />
+		<property name="FPLNum" type="String" column="FPLNum" />
+		<property name="FPLEndTime" type="String" column="FPLEndTime" />
+      <property name="FPLPicPath" type="String" column="FPLPicPath" />
+      <property name="TRLName" type="String" column="TRLName" />
+
+      <property name="TRLNum" type="string" column="TRLNum" />
+      <property name="TRLEndTime" type="String" column="TRLEndTime" />
+      <property name="TRLPicPath" type="String" column="TRLPicPath" />
+      <property name="LRLName" type="String" column="LRLName" />
+      <property name="LRLNum" type="String" column="LRLNum" />
+      <property name="LRLEndTime" type="String" column="LRLEndTime" />
+      <property name="LRLPicPath" type="String" column="LRLPicPath" />
+      <property name="CreateTime" type="DateTime" column="CreateTime" />
+      
+    </class>
+</hibernate-mapping>

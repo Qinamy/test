@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Fuli.Entity.Domain.CouponItem, Fuli.Entity" table="CouponItem">
+
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		<property name="CouponId" type="Int64" column="CouponId" />
+		<property name="CouponItemNo" type="String" column="CouponItemNo" />
+		<property name="OwnUser" type="String" column="OwnUser" />
+		<property name="ValidateStart" type="DateTime" column="ValidateStart" />
+		<property name="ValidateEnd" type="DateTime" column="ValidateEnd" />
+		<property name="IsUsed" type="Boolean" column="IsUsed" />
+		<property name="IsEffective" type="Boolean" column="IsEffective" />
+		<property name="UseOrderNumber" type="String" column="UseOrderNumber" />
+		<property name="UseTime" type="DateTime" column="UseTime" />
+		<property name="UseDiscountMoney" type="Decimal" column="UseDiscountMoney" />
+    <property name="Source" type="String" column="Source" />
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Fuli.Entity.Domain.CouponProductLimit, Fuli.Entity" table="CouponProductLimit">
+
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		<property name="ProductId" type="String" column="ProductId" />
+		<property name="CouponId" type="Int64" column="CouponId" />
+
+
+	</class>
+</hibernate-mapping>

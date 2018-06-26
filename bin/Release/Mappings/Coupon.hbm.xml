@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<class name="Fuli.Entity.Domain.Coupon, Fuli.Entity" table="Coupon">
+
+		<id name="Id" column="Id" type="Int64" unsaved-value="0">
+			<generator class="native"/>
+		</id>
+		<property name="Name" type="String" column="Name" />
+		<property name="Description" type="String" column="Description" />
+		<property name="ValidateType" type="Int16" column="ValidateType" />
+		<property name="VaildateStart" type="DateTime" column="VaildateStart" />
+		<property name="VaildateEnd" type="DateTime" column="VaildateEnd" />
+		<property name="ValidateLength" type="Int32" column="ValidateLength" />
+		<property name="LimitUserLevel" type="String" column="LimitUserLevel" />
+		<property name="ApplyType" type="Int32" column="ApplyType" />
+		<property name="MoneyLimit" type="Decimal" column="MoneyLimit" />
+		<property name="CountLimit" type="Int32" column="CountLimit" />
+		<property name="DiscountType" type="Int32" column="DiscountType" />
+		<property name="DiscountPercent" type="Decimal" column="DiscountPercent" />
+		<property name="DiscountMoney" type="Decimal" column="DiscountMoney" />
+		<property name="IsEffective" type="Boolean" column="IsEffective" />
+		<property name="CouponCount" type="Int32" column="CouponCount" />
+		<property name="SendedCount" type="Int32" column="SendedCount" />
+
+		<property name="Priority" type="Int32" column="Priority" />
+		<property name="IsExclusive" type="Boolean" column="IsExclusive" />
+    <property name="ModifyTime" type="DateTime" column="ModifyTime" />
+    <property name="CanPointChange" type="Boolean" column="CanPointChange" />
+    <property name="ChangePoint" type="Decimal" column="ChangePoint" />
+    <property name="IsRegisterSend" type="Boolean" column="IsRegisterSend" />
+    <property name="RegisterSendCount" type="Int32" column="RegisterSendCount" />
+  </class>
+</hibernate-mapping>
